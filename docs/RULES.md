@@ -9,6 +9,7 @@
 | 專案 | 路徑 |
 |------|------|
 | M487_ScsiTool | `D:\AiWorkSpace\M487_ScsiTool\` |
+| FWUPD | `D:\AiWorkSpace\FWUPD\` |
 
 > Heartbeat 自動掃描 `D:\AiWorkSpace\` 下所有有 `tasks/` 的資料夾。
 
@@ -21,6 +22,12 @@
 **描述：** M487 USB 複合裝置（MSC + HID I2C Bridge）  
 **任務資料夾：** `tasks\`  
 **目前進度：** Debug 整備矩陣（T024-T034 完成），等待實體硬體測試
+
+### FWUPD
+
+**描述：** Linux 韌體更新框架（fwupd）知識庫  
+**知識庫位置：** `D:\AiWorkSpace\FWUPD\`  
+**目前進度：** 知識庫已整併（Basics/Deployment/Firmware_CAB/Linux_Basics/Plugin_Development）
 
 ---
 
