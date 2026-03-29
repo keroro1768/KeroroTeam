@@ -24,14 +24,20 @@
 
 ---
 
-## 任務執行原則
+## 專案選擇與任務執行流程
 
-**每次執行任務前，必須先讀取該專案的 `TaskRules.md`**
+**每次 Heartbeat 執行任務前，依照以下流程：**
 
 ```
 Heartbeat 觸發
     ↓
 讀取 KeroroTeam/docs/RULES.md（專案清單）
+    ↓
+找到該專案目錄所在位置
+    ↓
+執行專案任務
+    ↓
+在專案目錄下，找到 tasks/ 目錄
     ↓
 根據 TaskList.md 找到任務
     ↓
@@ -39,6 +45,8 @@ Heartbeat 觸發
     ↓
 按照 TaskRules.md 的規則執行
 ```
+
+**每次執行任務前，必須先讀取該專案的 `TaskRules.md`**
 
 ---
 
