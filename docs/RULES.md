@@ -27,18 +27,25 @@
 ```
 D:\AiWorkSpace\M487_ScsiTool\
 └── tasks/
-    ├── T001/           ← 任務資料夾
-    │   ├── Task.md     ← 任務描述
-    │   ├── PLAN.md     ← 執行計畫
-    │   ├── WORKLOG.md  ← 工作日誌
-    │   └── VERIFY.md   ← 驗收結果
+    ├── TaskList.md         ← 專案任務總覽
+    ├── Task_Template.md    ← 任務模板
+    ├── Verify_Template.md  ← 驗收模板
+    ├── Readme.md           ← 任務說明
+    ├── T001/               ← 任務資料夾
+    │   ├── Task.md         ← 任務描述
+    │   ├── PLAN.md         ← 執行計畫
+    │   ├── WORKLOG.md      ← 工作日誌
+    │   └── VERIFY.md       ← 驗收結果
     ├── T002/
     └── enhancement/
-        └── E001_xxx/   ← Enhancement 提案
+        └── E001_xxx/       ← Enhancement 提案
 ```
 
 | 工具 | 用處 |
 |------|------|
+| `tasks/TaskList.md` | 專案任務總覽（Heartbeat 讀取）|
+| `tasks/Task_Template.md` | 新任務模板 |
+| `tasks/Verify_Template.md` | 驗收結果模板 |
 | `tasks/T0XX/Task.md` | 任務描述 |
 | `tasks/T0XX/PLAN.md` | 執行計畫 |
 | `tasks/T0XX/WORKLOG.md` | 工作日誌 |
@@ -161,9 +168,9 @@ Heartbeat 觸發（每 30 分鐘）
     ↓
 ② 掃描所有專案
     └── D:\AiWorkSpace\*
-        └── 讀取 tasks\TaskList.md
+        └── 讀取 tasks\TaskList.md（專案任務總覽）
     ↓
-③ 根據 RULES.md 執行相應動作
+③ 根據 RULES.md + TaskList.md 執行相應動作
         ├── 有 🔄 → 回報進度
         ├── 有 ⏳ → 自動執行
         └── 無 ⏳ → Review & 新增任務
