@@ -1,0 +1,30 @@
+name: Weekly Enhancement Review
+
+on:
+  schedule:
+    # 每周一早上 9:00 執行
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: List recent enhancements
+        run: |
+          echo "## 🚀 Enhancement Backlog Review" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          gh issue list \
+            --label enhancement \
+            --state open \
+            --json number,title,labels,assignees \
+            --jq '.[] | "- #\(.number) \(.title)"' >> $GITHUB_STEP_SUMMARY
+
+      - name: Check old issues
+        run: |
+          # 找出超過 30 天未處理的 Enhancement，提高優先度
+          echo "## ⚠️ 超過 30 天的 Enhancement" >> $GITHUB_STEP_SUMMARY
+          # 這裡需要用 gh api 查詢，詳細實作見 PR-002 研究報告

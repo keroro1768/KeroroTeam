@@ -44,6 +44,7 @@
 | ID | 文件 | 說明 |
 |----|------|------|
 | PR-001 | [PR-001_task-flow.md](processes/PR-001_task-flow.md) | 任務流程 |
+| PR-002 | [PR-002_continuous-optimization.md](processes/PR-002_continuous-optimization.md) | 持續優化機制 |
 
 ---
 
@@ -65,4 +66,4 @@ ID 格式：{領域代碼}-{序號}
 
 ## 🏷️ Tags
 
-#common #firmware #hardware #software #tools #processes #m487 #fwupd #usb #debug
+#common #firmware #hardware #software #tools #processes #m487 #fwupd #usb #debug #optimization #automation #team #okr
