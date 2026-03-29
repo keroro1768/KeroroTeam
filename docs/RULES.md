@@ -5,7 +5,21 @@
 
 ---
 
-## 1. 任務執行流程
+## 1. 任務管理方式
+
+**全部本地資料夾，不使用 GitHub Projects**
+
+所有任務都在 `tasks/` 資料夾，Enhancement 在 `tasks/enhancement/`。
+
+| 工具 | 用處 |
+|------|------|
+| `tasks/T0XX/` | 一般任務 |
+| `tasks/enhancement/E0XX/` | 強化構想 |
+| `projects.md` | 專案總覽 |
+
+---
+
+## 2. 任務執行流程
 
 ```
 Keroro 指派任務
@@ -21,7 +35,7 @@ Dororo 驗收
 
 ---
 
-## 2. Review 會議規則
+## 3. Review 會議規則
 
 ### 每週 Review 會議
 
@@ -56,7 +70,7 @@ Dororo 驗收
 
 ---
 
-## 3. Enhancement 提案規則
+## 4. Enhancement 提案規則
 
 ### 提案時機
 
@@ -85,7 +99,7 @@ tasks/enhancement/E001_xxx/
 
 ---
 
-## 4. 專案狀態追蹤
+## 5. 專案狀態追蹤
 
 ### projects.md
 
@@ -103,7 +117,7 @@ tasks/enhancement/E001_xxx/
 
 ---
 
-## 5. 知識共享規則
+## 6. 知識共享規則
 
 ### 開始任務前
 
@@ -115,7 +129,7 @@ tasks/enhancement/E001_xxx/
 
 ---
 
-## 6. 違規處理
+## 7. 違規處理
 
 | 違規 | 處理 |
 |------|------|
@@ -125,7 +139,7 @@ tasks/enhancement/E001_xxx/
 
 ---
 
-## 7. 檔案命名規範
+## 8. 檔案命名規範
 
 | 類型 | 格式 | 範例 |
 |------|------|------|
@@ -135,7 +149,7 @@ tasks/enhancement/E001_xxx/
 
 ---
 
-## 8. Git 提交規範
+## 9. Git 提交規範
 
 ```
 feat: 新功能
