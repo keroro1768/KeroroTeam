@@ -46,4 +46,5 @@ KeroroTeam/
 
 - [tasks/](tasks/) — 所有任務
 - [knowledge/](knowledge/) — 知識庫
+- [projects.md](projects.md) — 專案總覽
 - [docs/](docs/) — 文件歸檔
