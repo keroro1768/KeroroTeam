@@ -38,6 +38,7 @@
 | ID | 文件 | 說明 |
 |----|------|------|
 | TL-001 | [TL-001_vscode-setup.md](tools/TL-001_vscode-setup.md) | VSCode 開發環境 |
+| TL-002 | [TL-002_winget-devtools.md](tools/TL-002_winget-devtools.md) | Winget 安裝 VS/WDK/SDK |
 
 ### processes/ — 流程方法論
 
