@@ -1,6 +1,6 @@
 # KeroroTeam 工作規則
 
-> 最後更新：2026-03-30
+> 最後更新：2026-03-29
 
 ---
 
@@ -251,4 +251,16 @@ git push
 
 ---
 
-*KeroroTeam 工作規則 — 2026-03-30*
+---
+
+## Knowledge 文件更新記錄
+
+當 knowledge/ 新增文件時，同步更新於此。
+
+| 日期 | ID | 文件 | 說明 |
+|------|----|------|------|
+| 2026-03-29 | TL-002 | [TL-002_winget-devtools.md](../knowledge/tools/TL-002_winget-devtools.md) | Winget 安裝 VS/WDK/SDK 開發工具鏈 |
+
+---
+
+*KeroroTeam 工作規則 — 2026-03-29*
