@@ -1,6 +1,6 @@
 # KeroroTeam 工作規則
 
-> 最後更新：2026-03-29
+> 最後更新：2026-03-30
 
 ---
 
@@ -10,6 +10,7 @@
 |------|------|
 | M487_ScsiTool | `D:\AiWorkSpace\M487_ScsiTool\` |
 | FWUPD | `D:\AiWorkSpace\FWUPD\` |
+| AutoVerifier | `D:\Aiworkspace\AutoVerifier\` |
 
 > Heartbeat 自動掃描 `D:\AiWorkSpace\` 下所有有 `tasks/` 的資料夾。
 
@@ -30,6 +31,18 @@
 **目前進度：**
 - F001：✅ 知識庫研究完成（Kururu + Dororo 驗證）
 - F002：🔄 Plugin 實作進行中（Giroro 修復 Critical 問題中）
+
+### AutoVerifier
+
+**描述：** 自動化驗證框架（WinForms + JSON TestSuite）  
+**路徑：** `D:\Aiworkspace\AutoVerifier\`  
+**架構：**
+- `Engine/` — 測試引擎核心（TestSuiteRunner, StepByStepSession）
+- `Gui/` — WinForms GUI
+- `TestSuites/` — JSON 測試套件（*.test.json）
+- `Infra/` — 底層設施工具（IPC, Screenshot, UIAuto, LogReader）
+- `Report/` — Markdown / XUnit 報告生成器
+- `docs/` — 完整使用文件
 
 ---
 
@@ -263,4 +276,4 @@ git push
 
 ---
 
-*KeroroTeam 工作規則 — 2026-03-29*
+*KeroroTeam 工作規則 — 2026-03-30*
