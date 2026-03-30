@@ -36,13 +36,15 @@
 
 **描述：** 自動化驗證框架（WinForms + JSON TestSuite）  
 **路徑：** `D:\Aiworkspace\AutoVerifier\`  
+**GitHub：** `https://github.com/RinRyanJi/AutoVerifier`  
 **架構：**
 - `Engine/` — 測試引擎核心（TestSuiteRunner, StepByStepSession）
 - `Gui/` — WinForms GUI
 - `TestSuites/` — JSON 測試套件（*.test.json）
 - `Infra/` — 底層設施工具（IPC, Screenshot, UIAuto, LogReader）
 - `Report/` — Markdown / XUnit 報告生成器
-- `docs/` — 完整使用文件
+- `docs/` — 完整使用文件  
+**目前進度：** ✅ 初始 commit 完成，已推送至 GitHub（2026-03-30）
 
 ---
 
