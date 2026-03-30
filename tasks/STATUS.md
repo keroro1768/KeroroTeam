@@ -19,6 +19,13 @@
 | T036 | UnitTest 知識庫 | Kururu | ✅ 完成 |
 | T038 | FWUPD 知識庫 | Kururu | ✅ 完成 |
 
+### FWUPD
+
+| 任務 | 標題 | 負責 | 狀態 |
+|------|------|------|------|
+| F001 | HID I2C 產品 FWUPD 整合研究 | Kururu/Dororo | ✅ 完成 |
+| F002 | FWUPD Plugin 開發實作 | Giroro | 🔄 進行中（待修復 Critical 問題）|
+
 ### KeroroTeam
 
 | 任務 | 標題 | 負責 | 狀態 |
@@ -33,12 +40,15 @@
 | T001 | 等硬體 | 回辦公室 |
 | T008 | 等 BSP 整合 | Giroro 自行推進 |
 | T027a-h | 等 WDK 安裝 | 手動安裝 |
+| F002 | Plugin Critical 問題需修復 | Giroro 需重新實作 HID 通信 + 重構 Device 類型 |
 
 ---
 
 ## 🚀 可立即執行的任務
 
-（無）
+| 任務 | 說明 | 負責 |
+|------|------|------|
+| F002 修復 | 實作 HID 通信、重構 Device 類型、修正 udev 註冊 | Giroro |
 
 ---
 
@@ -49,4 +59,4 @@
 
 ---
 
-*最後更新：2026-03-30 07:11 — 同步自 HEARTBEAT*
+*最後更新：2026-03-30 08:29 — 同步自 HEARTBEAT*
