@@ -8,29 +8,14 @@
 
 | 專案 | 路徑 |
 |------|------|
-| M487_ScsiTool | `D:\AiWorkSpace\M487_ScsiTool\` |
-| FWUPD | `D:\AiWorkSpace\FWUPD\` |
 | AutoVerifier | `D:\Aiworkspace\AutoVerifier\` |
+| USBBusMonitor | `D:\Aiworkspace\USBBusMonitor\` |
 
 > Heartbeat 自動掃描 `D:\AiWorkSpace\` 下所有有 `tasks/` 的資料夾。
 
 ---
 
 ## 各專案職責
-
-### M487_ScsiTool
-
-**描述：** M487 USB 複合裝置（MSC + HID I2C Bridge）  
-**任務資料夾：** `tasks\`  
-**目前進度：** Debug 整備矩陣（T024-T034 完成），等待實體硬體測試
-
-### FWUPD
-
-**描述：** Linux 韌體更新框架（fwupd）知識庫與 Plugin 開發  
-**知識庫位置：** `D:\AiWorkSpace\FWUPD\`  
-**目前進度：**
-- F001：✅ 知識庫研究完成（Kururu + Dororo 驗證）
-- F002：🔄 Plugin 實作進行中（Giroro 修復 Critical 問題中）
 
 ### AutoVerifier
 
@@ -45,6 +30,13 @@
 - `Report/` — Markdown / XUnit 報告生成器
 - `docs/` — 完整使用文件  
 **目前進度：** ✅ 初始 commit 完成，已推送至 GitHub（2026-03-30）
+
+### USBBusMonitor
+
+**描述：** USB Bus Monitor（Serial Filter Driver）  
+**路徑：** `D:\Aiworkspace\USBBusMonitor\`  
+**任務資料夾：** `tasks\`  
+**目前進度：** Phase 3 執行中（USBBusMonitor Serial Filter）
 
 ---
 
@@ -143,56 +135,6 @@ Dororo 驗收
 ```
 
 ---
-
-## FWUPD 專屬工作流程
-
-### 知識庫建置流程
-
-```
-Caro 提出需求
-    ↓
-Keroro 指派 Kururu 研究
-    ↓
-Kururu 產出文件（存入 doc/I2C_HID_Company_Product/）
-    ↓
-Dororo 驗證（與官方文件交叉比對）
-    ↓
-修正錯誤
-    ↓
-Commit + Push
-    ↓
-更新 TaskList.md
-```
-
-### Plugin 開發流程
-
-```
-F001 研究完成
-    ↓
-Keroro 指派 Giroro 實作 Plugin
-    ↓
-Giroro 參考 elantp Plugin（最佳範本）
-    ↓
-產出 Plugin 原始碼（plugin/company-i2c-hid/）
-    ↓
-Dororo 交叉比對驗證（與 elantp 原始碼對照）
-    ↓
-發現問題 → 使命必達模式啟動
-    ↓
-Giroro 修復 Critical/High 問題
-    ↓
-Dororo 重新驗證
-    ↓
-直到完美通過
-```
-
-### 多層次測試策略（虛擬硬體）
-
-| 層次 | 方案 | 需要硬體 | 優先順序 |
-|------|------|----------|----------|
-| 第一層 | Self-Test Framework | ❌ | ✅ 立即可行 |
-| 第二層 | JSON 模擬設備定義 | ❌ | 🔄 本週內 |
-| 第三層 | 離線 .cab 安裝測試 | ✅ | ⏳ 硬體就緒後 |
 
 ---
 
