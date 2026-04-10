@@ -40,6 +40,7 @@
 | T033 | GDB RSP Framework | Giroro | ✅ 完成（P2） |
 | T034 | DWT Debug Framework | Giroro | ✅ 完成（P2） |
 | T035 | USBPcap + Wireshark | - | ⏳ 參考工具 |
+| T006 | Windows C++ HID Tool | Tamama | ✅ 完成 (2026-04-09) |
 
 ### FWUPD
 
@@ -47,7 +48,7 @@
 |------|------|------|------|
 | F001 | HID I2C 產品 FWUPD 整合研究 | Kururu/Dororo | ✅ 完成 |
 | F002 | FWUPD Plugin 開發實作 | Giroro | ✅ 完成（Dororo 驗證通過）|
-| F003 | LVFS 帳號申請 | 待指派 | ⏳ Pending |
+| F003 | LVFS 帳號申請 | 待指派 | ⏸️ Pending |
 
 ### KeroroTeam
 
@@ -71,7 +72,6 @@
 
 | 任務 | 說明 | 負責 |
 |------|------|------|
-| T006 | Windows C++ HID Tool | 待指派（P2） |
 | T007 | I2C_Read 功能實作 | 待硬體驗證後 |
 | T013 | 現有專案功能優化 | Kururu 検討中 |
 
@@ -93,4 +93,4 @@
 
 ---
 
-*最後更新：2026-04-02 15:00 — 同步自 HEARTBEAT*
+*最後更新：2026-04-11 07:58 — 同步自 HEARTBEAT*
