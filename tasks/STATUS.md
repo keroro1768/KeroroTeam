@@ -13,7 +13,7 @@
 
 | 任務 | 標題 | 負責 | 狀態 |
 |------|------|------|------|
-| T001 | USB 複合裝置 | Giroro | ⏸️ 硬體 Pending（等 power-cycle） |
+| T001 | USB 複合裝置 | Giroro | 🔄 ST4 等 Caro power-cycle |
 | T002-T005 | Toolchain/GCC/OpenOCD/VSCode Debug | - | ✅ 完成 |
 | T008 | BSP HSUSBD 整合 | Giroro | ✅ 完成，待硬體驗證 |
 | T011 | T001 Review | Dororo | ✅ 完成 |
@@ -41,6 +41,12 @@
 | T034 | DWT Debug Framework | Giroro | ✅ 完成（P2） |
 | T035 | USBPcap + Wireshark | - | ⏳ 參考工具 |
 | T006 | Windows C++ HID Tool | Tamama | ✅ 完成 (2026-04-09) |
+| T036 | Unit Test 知識庫 | Kururu | ✅ 完成 (2026-04-12) |
+| T037 | Microsoft USB Driver Samples 研究 | Kururu | ✅ 完成 (2026-04-12) |
+| T038 | Linux FWUPD 韌體更新知識庫 | Kururu | ✅ 完成 (2026-04-12) |
+| T039 | 文件驗收（HID-over-I2C）| Dororo | ✅ 完成 (2026-04-12) |
+| T040 | hid_bridge/doc 審查 | Dororo | ⏳ 待處理 (2026-04-13) |
+| T041 | hid_bridge 建置 + 測試驗證 | Dororo | ⏳ 待處理 (2026-04-13) |
 
 ### FWUPD
 
@@ -73,7 +79,9 @@
 | 任務 | 說明 | 負責 |
 |------|------|------|
 | T007 | I2C_Read 功能實作 | 待硬體驗證後 |
-| T013 | 現有專案功能優化 | Kururu 検討中 |
+| T013 | 現有專案功能優化 | Kururu 檢討中 |
+| T040 | hid_bridge/doc 審查 | Dororo 待執行 |
+| T041 | hid_bridge 建置 + 測試驗證 | Dororo 待執行（T040 完成後）|
 
 ---
 
@@ -93,4 +101,4 @@
 
 ---
 
-*最後更新：2026-04-11 07:58 — 同步自 HEARTBEAT*
+*最後更新：2026-04-14 14:31 — 同步自 HEARTBEAT*
